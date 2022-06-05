@@ -1,3 +1,6 @@
+
+
+
 .header--sticky {
         position: fixed;
         top: 0;
@@ -68,21 +71,6 @@ html {
         -webkit-text-size-adjust: 100%;
 }
 
-0% {
-        opacity: 0;
-        -webkit-transform: translateY(-100%);
-        transform: translateY(-100%);
-}
-
-50% {
-        opacity: 1;
-}
-
-100% {
-        opacity: 1;
-        -webkit-transform: translateY(0%);
-        transform: translateY(0%);
-}
 
 .hide {
         display: none
@@ -839,7 +827,9 @@ img {
         padding: 0 2rem;
         width: 100%;
         margin-left: auto;
-        margin-right: auto
+        margin-right: auto;
+        background-color:grey;
+        box-shadow: 5px 10px 8px #888888;
 }
 
 @media (min-width: 1560px) {
@@ -6846,13 +6836,12 @@ li.open[data-parent]:not(.hidden-search) {
 .header {
         position: relative;
         overflow: visible;
-        background-color: #ffffff;
         -webkit-box-shadow: 0 2px 25px 0 rgba(54, 66, 117, 0.12);
-        box-shadow: 0 2px 25px 0 rgba(54, 66, 117, 0.12);
+        box-shadow: 0px 5px 10px #3f3838;
         z-index: 96
 }
 
-.header__ribbon {
+/* .header__ribbon {
         position: relative;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -6877,7 +6866,7 @@ li.open[data-parent]:not(.hidden-search) {
 
 .header__ribbon--hidden {
         height: 0
-}
+} */
 
 .header__container {
         position: relative;
@@ -6886,7 +6875,8 @@ li.open[data-parent]:not(.hidden-search) {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
-        height: 7rem;
+        height: 6rem;
+        
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -6898,7 +6888,8 @@ li.open[data-parent]:not(.hidden-search) {
         -ms-flex-align: center;
         align-items: center;
         background-color: #ffffff;
-        z-index: 3
+        z-index: 3;
+        background-image: linear-gradient(to right, rgb(30, 109, 30), rgb(230, 112, 17), grey);
 }
 
 @media (min-width: 1560px) {
@@ -6944,10 +6935,12 @@ li.open[data-parent]:not(.hidden-search) {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        height: inherit;
         -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
         flex: 0 0 auto;
-        margin-right: 4rem
+        margin-right: 4rem;
+        
 }
 
 .header__brand a {
@@ -7805,14 +7798,6 @@ li.open[data-parent]:not(.hidden-search) {
 
 
 
-.banner {
-        margin: 0;
-        background-image: url(https://assets.scaler.com/assets/academy/svg/banner-background-34136d3….svg);
-        background-color: #001a50;
-        padding-top: 5rem;
-        background-position: center;
-        height: 72.8rem;
-}
 
 .section {
         margin: 5rem 0;
@@ -12039,15 +12024,11 @@ user agent stylesheet section {
 }
 
 .glance__cards {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
         justify-content: center;
-        padding-bottom: 6rem
+        padding-bottom: 6rem;
+        
 }
 
 @media screen and (max-width: 767px) {
@@ -12060,7 +12041,8 @@ user agent stylesheet section {
         background: #ffffff;
         border-radius: 0.75rem;
         -webkit-box-shadow: 0 0.8rem 3.2rem 0 rgba(2, 16, 40, 0.16);
-        box-shadow: 0 0.8rem 3.2rem 0 rgba(2, 16, 40, 0.16)
+        background-color:  rgb(196, 177, 177);
+
 }
 
 @media screen and (max-width: 767px) {
@@ -12082,19 +12064,15 @@ user agent stylesheet section {
 
 .glance .item {
         padding: 2rem;
-        -ms-flex-preferred-size: 29%;
         flex-basis: 29%;
         text-align: center;
         border-radius: 0.75rem;
         margin: 1.5rem;
-        position: relative;
-        display: -webkit-box;
-        display: -ms-flexbox;
+        position: relative;       
         display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column
+        flex-direction: column;
+        height: 40px;
+        width: 40px;
 }
 
 @media screen and (max-width: 767px) {
@@ -12202,8 +12180,7 @@ user agent stylesheet section {
 
 .banner {
         margin: 0;
-        background-image: url(https://assets.scaler.com/assets/academy/svg/banner-background-34136d3a9ddff172e6bae6e3d8283c452231dcda2196b055bfa2e34e222754b7.svg);
-        background-color: #001a50;
+        background-color: rgb(230, 112, 17);
         padding-top: 5rem;
         background-position: center;
         height: 72.8rem
@@ -13771,7 +13748,7 @@ user agent stylesheet section {
 }
 
 .curriculum-features__scaler-head {
-        color: #006ada;
+        color: #000;
         padding-right: 0
 }
 

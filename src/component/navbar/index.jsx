@@ -1,44 +1,36 @@
 import React from "react";
-// import "./style.js.css";
+import logo from "../../assets/logo/grass_logo.png";
 export default function NavBar() {
   return (
     <header id="main-site-header" className="header scaler-branding scaler-academy-header dsml-header header--sticky slide-in-down">
       <div className="header__container">
         <div className="header__brand">
           <a className="header__brand-link" href="/academy/">
-            <img className="header__logo"  src="../../assets/logo/Grras Logo white 116x98px -01.png"/>
+            <img className="header__logo" src={ logo}/>
           </a>
         </div>
 
 
 
         <div className="header__content">
-
-
-
           <div className="header__nav">
             <a href="#curriculum" data-action="smooth-scroll" className="header__nav-item gtm-track-element" data-gtm-allowed-actions="click" data-gtm-type="nav" data-gtm-element="Curriculum" data-cy="curriculum_nav_link" >
-              Curriculum
+              About
             </a>
             <a href="#testimonial" data-action="smooth-scroll" className="header__nav-item gtm-track-element" data-gtm-allowed-actions="click" data-gtm-type="nav" data-gtm-element="Reviews" data-cy="reviews_nav_link" >
-              Reviews
+              Pay After Placement
+                  (fee)
             </a>
             <a href="#teachers" data-action="smooth-scroll" className="header__nav-item gtm-track-element" data-gtm-allowed-actions="click" data-gtm-type="nav" data-gtm-element="Teaching" data-cy="teaching_nav_link" >
-              Teaching
+              Hire From Us!
             </a>
             <a href="#mentors" data-action="smooth-scroll" className="header__nav-item gtm-track-element" data-gtm-allowed-actions="click" data-gtm-type="nav" data-gtm-element="Mentorship" data-cy="mentorship_nav_link" >
               Mentorship
             </a>
             <a href="#community" data-action="smooth-scroll" className="header__nav-item gtm-track-element" data-gtm-allowed-actions="click" data-gtm-type="nav" data-gtm-element="Community" data-cy="community_nav_link" >
               Community
-            </a>
-            <a href="#careers" data-action="smooth-scroll" className="header__nav-item gtm-track-element header__nav-item--active" data-gtm-allowed-actions="click" data-gtm-type="nav" data-gtm-element="Careers" data-cy="careers_nav_link" >
-              Careers
-            </a>
-            <a href="#pricing" data-action="smooth-scroll" className="header__nav-item gtm-track-element" data-gtm-allowed-actions="click" data-gtm-type="nav" data-gtm-element="Pricing" data-cy="pricing_nav_link" >
-              Pricing
-            </a>
-            <a href="/faq" className="header__nav-item gtm-track-element" data-gtm-allowed-actions="click" data-gtm-type="nav" data-gtm-element="FAQs" data-cy="faqs_nav_link" >
+            </a>     
+                <a href="/faq" className="header__nav-item gtm-track-element" data-gtm-allowed-actions="click" data-gtm-type="nav" data-gtm-element="FAQs" data-cy="faqs_nav_link" >
               FAQs
             </a>
 
@@ -51,9 +43,9 @@ export default function NavBar() {
 
 
 
-              <a className="gtm-track-element auth-trigger apply-button academy-button uppercase bold m-r-10 secondary is-flat" data-gtm-allowed-actions="click hover" data-gtm-element="auth_trigger" data-action="flow-trigger" data-target="auth" data-mode="register" data-cy="apply_now_button" data-proceed="/apply/" data-tracking="ga" data-ga-action="auth" data-ga-label="header-register" data-name="header-register">
+              <a className="   academy-button uppercase bold m-r-10 secondary " >
 
-                Apply Now
+                Enroll/Register
 
               </a>
 
